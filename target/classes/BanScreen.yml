@@ -1,0 +1,9 @@
+# Here you can customize the ban screen displayed by the Plugin
+
+server_name: "SERVER NAME HERE"
+
+title: "%prefix%"
+ban_details:
+  - "You have been banned from %server_name%"
+  - "%reason%"
+  - "Expires; %duration%"

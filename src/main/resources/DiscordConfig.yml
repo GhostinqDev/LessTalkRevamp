@@ -1,0 +1,43 @@
+# This will determine if your logs will be sent to Discord
+enabled: true
+
+# Do not share your webhook link with anyone! This could lead to malicious actions!
+# To get a webhook url you can do the following;
+# Click your Server Name, top left (If on PC) -> Server Settings -> Integrations -> Create Website
+# After creating your webhook, you will copy the link of the webhook and paste it in "webhook_url"
+webhook_url: "link_here"
+
+# This will tell the Webhook what to look out for
+log_chat_filter: true
+log_mute: true
+log_unmute: true
+log_warn: true
+
+
+# Embed customization
+# More customization will come in the future.
+# Warn Player Customization
+warn_player_title: "Player Warned"
+warn_description:
+  - "%player% has been warned by %staff%"
+  - "%reason%"
+warn_color: "#f7351b"
+
+# Unmuted Player Customization
+unmuted_player_title: "Player Unmuted"
+unmuted_description: "%player% was unmuted by %staff%"
+unmuted_player_color: "#f7351b"
+
+# Muted Player Customization
+muted_player_title: "Player Muted"
+muted_description:
+  - "%player% was Muted"
+  - "Muted by; %staff%"
+  - "Reason for Mute; %reason%"
+muted_player_color: "#f7351b"
+
+
+# Chat Filter Customization
+chat_filter_title: "Filtered Chat"
+chat_filter_description: "%player% has said a bad word; %filtered_word%"
+chat_filter_color: "#f7351b"

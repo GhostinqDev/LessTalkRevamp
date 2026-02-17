@@ -1,0 +1,8 @@
+# Current Placeholder support is slim.
+# With enough requests, more will be added into future updates.
+# %player% - return players name.
+# %player_displayname% - returns the players display name.
+
+server_chat_muted: "&cThe server chat has been muted by %player%"
+server_chat_unmuted: "&aThe server chat has been unmuted by %player%"
+server_chat_cleared: "&aChat has been cleared by %player_displayname%"

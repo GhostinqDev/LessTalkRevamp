@@ -1,0 +1,16 @@
+name: LessTalk
+version: '1.1.5'
+main: me.Ghostinq.lessTalk.LessTalk
+api-version: '1.21'
+
+commands:
+  lesstalk:
+    description: "Basic Command for LessTalk"
+    aliases:
+      - lt
+      - lesst
+      - ltalk
+  staffchat:
+    desription: "Staff Chat command for LessTalk"
+    aliases:
+      - sc
