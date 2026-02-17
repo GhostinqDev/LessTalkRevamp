@@ -83,16 +83,8 @@ public class generalCommands implements CommandExecutor {
 
         Player p = (Player) sender;
 
-        if (p.hasPermission("LessTalk.staff")) {
-            if (args.length == 0) {
-                returnHelp(p);
-            }
-
-            // /lt lock
+        if (p.hasPermission("LessTalk.Admin")) {
             if (args.length == 1) {
-                if (args[0].equalsIgnoreCase("clear")) {
-                    clearChat(p);
-                }
                 if (args[0].equalsIgnoreCase("reload")) {
                     try {
                         broadcastFile.reloadConfig();
@@ -105,9 +97,19 @@ public class generalCommands implements CommandExecutor {
                         p.sendMessage(ChatColor.format(prefix + " &cConfig failed to reload, please check console for errors!"));
                         throw new RuntimeException(e);
                     }
-
                     p.sendMessage(ChatColor.format(prefix + " &aConfig has been reloaded."));
+                }
+            }
+        }
 
+        if (p.hasPermission("LessTalk.staff")) {
+            if (args.length == 0) {
+                returnHelp(p);
+            }
+            // /lt lock
+            if (args.length == 1) {
+                if (args[0].equalsIgnoreCase("clear")) {
+                    clearChat(p);
                 }
                 if (args[0].equalsIgnoreCase("lock")) {
                     lockChat(p);
