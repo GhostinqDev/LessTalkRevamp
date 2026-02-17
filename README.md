@@ -1,4 +1,3 @@
-# LessTalk v1.1.5
 ## Lightweight Chat Management & Moderation for SMP Servers
 
 LessTalk is a performance-friendly chat management plugin designed specifically for SMP and community-driven Minecraft servers. It helps you reduce spam, improve chat quality, and give staff better moderation tools all without bloated systems or unnecessary complexity.
