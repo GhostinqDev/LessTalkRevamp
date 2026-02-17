@@ -46,10 +46,10 @@ public class chatPunishment {
             p.sendMessage(ChatColor.format(prefix + " &7" + nullTarget));
             return;
         }
-//        if (target.hasPermission("LessTalk.Staff")) {
-//            p.sendMessage(ChatColor.format(prefix + " &cYou cannot mute that Player!"));
-//            return;
-//        }
+        if (target.hasPermission("LessTalk.Staff")) {
+            p.sendMessage(ChatColor.format(prefix + " &cYou cannot mute that Player!"));
+            return;
+        }
         if (mutedFile.containsPlayer(target)) {
             p.sendMessage(ChatColor.format(prefix + " &cThat player is already muted!"));
             return;

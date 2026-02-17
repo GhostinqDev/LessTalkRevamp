@@ -48,10 +48,10 @@ public class playerPunish {
                 p.sendMessage(ChatColor.format(prefix + " " + reasonNull));
             }
 
-//            if (target.hasPermission("LessTalk.Staff")) {
-//                p.sendMessage(ChatColor.format(prefix + " &cYou cannot warn that Player!"));
-//                return;
-//            }
+            if (target.hasPermission("LessTalk.Staff")) {
+                p.sendMessage(ChatColor.format(prefix + " &cYou cannot warn that Player!"));
+                return;
+            }
 
             String playerTemplate = messagesFile.getString("player_warned");
             String staffTemplate = messagesFile.getString("staff_warned");
